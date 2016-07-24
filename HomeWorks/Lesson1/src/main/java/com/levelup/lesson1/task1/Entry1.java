@@ -5,29 +5,30 @@ class Entry1 {
         Input input = new Input();
         Calc calc = new Calc();
         input.scun();
+
         switch (input.getStr()) {//что то не так
-            case "+":
+            case '+':
                 calc.plus(input.getA(), input.getB());
                 System.out.println(calc.res);
                 break;
-            case "-":
+            case '-':
                 calc.minus(input.getA(), input.getB());
                 System.out.println(calc.res);
                 break;
-            case "*":
+            case '*':
                 calc.ymnoj(input.getA(), input.getB());
                 System.out.println(calc.res);
                 break;
-            case "/":
+            case '/':
                 calc.delen(input.getA(), input.getB());
                 System.out.println(calc.res);
                 break;
-            case "^":
+            case '^':
                 calc.pow(input.getA(), input.getB());
                 System.out.println(calc.res);
                 break;
         }
 
     }
-    }
 }
+

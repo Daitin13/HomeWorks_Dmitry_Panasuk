@@ -6,8 +6,8 @@ class Input {
     private double a, b;
     private String str;
 
-    public String getStr() {
-        return str;
+    public char getStr(){
+        return str.charAt(0);
     }
 
     public void setStr(String str) {
@@ -39,5 +39,6 @@ class Input {
         b = scan.nextDouble();
         System.out.println("Что сделать? (+ - / * ^)");
         str = scan.nextLine();
+
     }
 }
