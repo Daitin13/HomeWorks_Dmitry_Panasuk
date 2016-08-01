@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/com.levelup.java.iml" filepath="$PROJECT_DIR$/com.levelup.java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson4/HomeWorks.iml" filepath="$PROJECT_DIR$/lesson4/HomeWorks.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson1/com.levelup.lesson1.iml" filepath="$PROJECT_DIR$/Lesson1/com.levelup.lesson1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson2/com.levelup.lesson2.iml" filepath="$PROJECT_DIR$/Lesson2/com.levelup.lesson2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson3/com.levelup.lesson3.iml" filepath="$PROJECT_DIR$/Lesson3/com.levelup.lesson3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson4/com.levelup.lesson4.iml" filepath="$PROJECT_DIR$/Lesson4/com.levelup.lesson4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson5/com.levelup.lesson5.iml" filepath="$PROJECT_DIR$/Lesson5/com.levelup.lesson5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson6/com.levelup.lesson6.iml" filepath="$PROJECT_DIR$/Lesson6/com.levelup.lesson6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson7/com.levelup.lesson7.iml" filepath="$PROJECT_DIR$/Lesson7/com.levelup.lesson7.iml" />
     </modules>
   </component>
 </project>

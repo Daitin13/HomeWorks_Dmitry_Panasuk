@@ -22,10 +22,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="com.levelup.java" />
         <module name="com.levelup.lesson1" />
         <module name="com.levelup.lesson2" />
         <module name="com.levelup.lesson3" />
+        <module name="com.levelup.lesson4" />
+        <module name="com.levelup.lesson5" />
+        <module name="com.levelup.lesson6" />
+        <module name="HomeWorks" />
+        <module name="Lesson" />
+        <module name="Lesson5" />
+        <module name="lessons4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +39,14 @@
       <module name="com.levelup.lesson1" target="1.5" />
       <module name="com.levelup.lesson2" target="1.5" />
       <module name="com.levelup.lesson3" target="1.5" />
+      <module name="com.levelup.lesson4" target="1.5" />
+      <module name="com.levelup.lesson5" target="1.5" />
+      <module name="com.levelup.lesson6" target="1.5" />
+      <module name="HomeWorks" target="1.8" />
+      <module name="Lesson" target="1.5" />
+      <module name="lesson4" target="1.5" />
+      <module name="Lesson5" target="1.8" />
+      <module name="lessons4" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
