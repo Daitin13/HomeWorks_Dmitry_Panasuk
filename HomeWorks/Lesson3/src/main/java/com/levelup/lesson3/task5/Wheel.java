@@ -31,6 +31,10 @@ public class Wheel {
         this.worn = worn;
     }
 
+    public void setWorn1(int worn) {
+        this.worn += worn;
+    }
+
     public String getManufacturer() {
         return manufacturer;
     }

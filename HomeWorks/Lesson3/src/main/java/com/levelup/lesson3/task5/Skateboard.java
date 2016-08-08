@@ -3,7 +3,7 @@ package com.levelup.lesson3.task5;
 import java.util.Arrays;
 
 public class Skateboard {
-    Wheel kolesa[] = new Wheel[3];
+    Wheel kolesa[] = new Wheel[4];
     Board doska = new Board();
     private int countDistance = 0;
 
@@ -51,9 +51,22 @@ public class Skateboard {
         } else {
             countDistance++;
             System.out.println("Проехал вперед");
-            for (int i = 0; i < kolesa.length; i++) {
-                kolesa[i].setWorn(kolesa[i].getWorn() + 1);
-            }
+                kolesa[0].setWorn1(1);
+            return true;
+        }
+    }
+
+    boolean jampSkateboard(){
+        if (kolesa[0].getWorn() >= 100) {
+            System.out.println("Требуеться замена колес");
+            return false;
+        }
+        if (doska.getWorn() >= 100) {
+            System.out.println("Требуеться замена доски");
+            return false;
+        } else {
+            countDistance++;
+            System.out.println("Прыгнул");
             doska.setWorn(doska.getWorn() + 1);
             return true;
         }
@@ -62,12 +75,13 @@ public class Skateboard {
     void newWheels() {
         for (int i = 0; i < kolesa.length; i++) {
             kolesa[i].setWorn(0);
-            System.out.println("Поставили новые колека");
         }
+            System.out.println("Поставили новые колека");
     }
 
     void newBoard() {
         doska.setWorn(0);
+        System.out.println("Поставили новую доску");
     }
 
     void checkWheels() {
@@ -84,9 +98,17 @@ public class Skateboard {
         skateboard.checkBoard();
         skateboard.checkWheels();
         skateboard.moveSkateboard();
+        skateboard.jampSkateboard();
         skateboard.checkWheels();
         skateboard.checkBoard();
-        System.out.println(skateboard.kolesa);
+        skateboard.moveSkateboard();
+        skateboard.jampSkateboard();
+        skateboard.checkWheels();
+        skateboard.checkBoard();
+        skateboard.newWheels();
+        skateboard.newBoard();
+        skateboard.checkWheels();
+        skateboard.checkBoard();
     }
 
 

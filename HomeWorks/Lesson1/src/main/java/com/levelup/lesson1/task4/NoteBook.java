@@ -14,7 +14,7 @@ public class NoteBook {
         for (int i = 0; i < countNotes; i++) {
             String temp = notes[i].getS();
             if (temp.equals(s)) ;
-            return i + 1;
+            return i ;
         }
         return -1;
     }
@@ -65,7 +65,7 @@ public class NoteBook {
         noteBook.addNote("tretiy zapis'");
         noteBook.addNote("chetvertay zapis'");
         noteBook.seeAllNotes();
-        noteBook.deleteNote("Bla-bla-bla");//// TODO: 08.08.2016 ne pravelno ydalenie 
+        noteBook.deleteNote("Bla-bla-bla");
         noteBook.changeNote("vtoray zapis'", "izmenenie");
         noteBook.seeAllNotes();
     }

@@ -1,6 +1,6 @@
 package com.levelup.lesson3.task3;
 
-public class Task3 {
+public class Matrica {
 
     public static void main(String[] args) {
         int matrica[][] = new int[5][];
