@@ -1,20 +1,28 @@
 package com.levelup.lesson1.task4;
+
 import java.util.Arrays;
+
 public class NoteBook {
     Note notes[] = new Note[10];
     private int countNotes = 0;
 
+    public int getCountNotes() {
+        return countNotes;
+    }
+
     public int serchIndexNote(String s) {
         for (int i = 0; i < countNotes; i++) {
-            if (notes[i].equals(s)) ;
-            return i;
+            String temp = notes[i].getS();
+            if (temp.equals(s)) ;
+            return i + 1;
         }
         return -1;
     }
 
     public boolean addNote(String s) {
         if (countNotes < notes.length) {
-            notes[countNotes].setS(s);//// TODO: 01.08.2016  
+            notes[countNotes] = new Note();
+            notes[countNotes].setS(s);
             countNotes++;
             return true;
         }
@@ -25,7 +33,10 @@ public class NoteBook {
     public boolean deleteNote(String s) {
         int i = serchIndexNote(s);
         if (i != -1) {
-            notes[i] = null;
+            for (int j = i; j < countNotes; j++) {
+                notes[j] = notes[j + 1];
+            }
+            notes[countNotes] = null;
             countNotes--;
             return true;
         }
@@ -41,15 +52,21 @@ public class NoteBook {
         return false;
     }
 
-    public void seeAllNotes(){
-        for (int i = 0; i <countNotes ; i++) {
+    public void seeAllNotes() {
+        for (int i = 0; i < countNotes; i++) {
             System.out.println(notes[i].getS());
         }
     }
+
     public static void main(String[] args) {
         NoteBook noteBook = new NoteBook();
         noteBook.addNote("Bla-bla-bla");
         noteBook.addNote("vtoray zapis'");
+        noteBook.addNote("tretiy zapis'");
+        noteBook.addNote("chetvertay zapis'");
+        noteBook.seeAllNotes();
+        noteBook.deleteNote("Bla-bla-bla");//// TODO: 08.08.2016 ne pravelno ydalenie 
+        noteBook.changeNote("vtoray zapis'", "izmenenie");
         noteBook.seeAllNotes();
     }
 }

@@ -1,7 +1,9 @@
 package com.levelup.lesson4.task1;
 
-/**
- * Created by Daitin on 01.08.2016.
- */
+
 public class Task1 {
+    public static void main(String[] args) {
+        //Fractions fra = new Fractions();
+        System.out.println(2.654845%1);
+    }
 }
