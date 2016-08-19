@@ -19,4 +19,18 @@ public class Crane extends Trucks {
     public void setName(String name) {
         this.name = name;
     }
+
+    public static void main(String[] args) {
+        Crane crane205 = new Crane();
+        crane205.info();
+        crane205.setOil(2);
+        crane205.drive();
+        crane205.stopDrive();
+        crane205.stopDrive();
+        crane205.drive();
+        crane205.drive();
+        crane205.info();
+        crane205.stopDrive();
+        crane205.drive();
+    }
 }
