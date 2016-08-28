@@ -32,6 +32,6 @@ public class Fractions {
 
     @Override
     public String toString() {
-        return "Fractions =" + a + b;
+        return a+"," + b;
     }
 }

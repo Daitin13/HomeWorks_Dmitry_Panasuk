@@ -8,7 +8,7 @@ public class Honda extends PersonalCar {
     }
 
     public void setName(String name) {
-        this.name = "Honda "+name;
+        this.name = "Honda " + name;
     }
 
     public static void main(String[] args) {
@@ -27,10 +27,6 @@ public class Honda extends PersonalCar {
         hondaRX3.stopDrive();
         hondaRX3.stopDrive();
         hondaRX3.drive();
-
-
-
-        //hondaRX3.info();
 
 
     }
