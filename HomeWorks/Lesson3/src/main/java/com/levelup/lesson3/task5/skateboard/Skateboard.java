@@ -4,7 +4,7 @@ import com.levelup.lesson3.task5.board.Board;
 import com.levelup.lesson3.task5.wheel.Side;
 import com.levelup.lesson3.task5.wheel.Wheel;
 
-public class Skateboard implements ISkateBoard{
+public class Skateboard implements ISkateBoard {
     private String name;
     private Wheel wheels[] = new Wheel[4];
     private Board board = new Board();
@@ -12,7 +12,9 @@ public class Skateboard implements ISkateBoard{
     boolean stat;
 
     public Skateboard() {
-
+        for (int i = 0; i < wheels.length; i++) {
+            wheels[i] = new Wheel();
+        }
     }
 
     public Skateboard(String name, Wheel[] wheels, Board board) {
@@ -79,25 +81,21 @@ public class Skateboard implements ISkateBoard{
     public void getStatus() {
         if (board.checkBoard()) {
             statusSkateboard = StatusSkateboard.OK;
-            System.out.println("Board is "+statusSkateboard);
+            System.out.println("Board is " + statusSkateboard);
+        } else {
+            statusSkateboard = StatusSkateboard.NEED_REPLACEMENT_BOADR;
+            System.out.println(statusSkateboard);
         }
-        else statusSkateboard = StatusSkateboard.NEED_REPLACEMENT_BOADR;
-        System.out.println(statusSkateboard);
         for (Wheel wheel : wheels) {
             stat = wheel.checkWheels();
         }
         if (stat) {
             statusSkateboard = StatusSkateboard.OK;
-            System.out.println("Wheels is "+statusSkateboard);
+            System.out.println("Wheels is " + statusSkateboard);
+        } else {
+            statusSkateboard = StatusSkateboard.NEED_REPLACEMEN_WHEEL;
+            System.out.println(statusSkateboard);
         }
-        else statusSkateboard = StatusSkateboard.NEED_REPLACEMEN_WHEEL;
-        System.out.println(statusSkateboard);
     }
 
-    public static void main(String[] args) {
-        Skateboard skateboard = new Skateboard();
-        skateboard.drive(50,Side.FORWARD);
-        skateboard.jump();
-        skateboard.getStatus();
-    }
 }
