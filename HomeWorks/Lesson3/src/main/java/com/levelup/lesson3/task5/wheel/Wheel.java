@@ -49,7 +49,7 @@ public class Wheel {
 
     public boolean run(int distance, Side side) {
         this.distance += distance;
-        if (this.distance > typeWheel.getMaxDistance()) {
+        if (this.distance >= typeWheel.getMaxDistance()) {
             throw new MaxDistanceExp();
         }
         return true;
