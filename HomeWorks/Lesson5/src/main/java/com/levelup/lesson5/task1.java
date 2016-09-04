@@ -1,7 +1,12 @@
 package com.levelup.lesson5;
 
-/**
- * Created by Daitin on 01.08.2016.
- */
 public class task1 {
+    public task1(){}
+    public void task1(){
+
+    }
+    final static int task1 = 10;
+char T ='d';
+    public class T{}
+
 }

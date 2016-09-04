@@ -1,35 +1,32 @@
-package com.levelup.lesson1.task1;
+package com.levelup.lesson1;
 
 import java.util.Scanner;
 
-class Input {
+public class Input {
     private double a, b;
     private String str;
 
-    public char getStr(){
-        return str.charAt(0);
+    public Input(double a, double b, String str) {
+        this.a = a;
+        this.b = b;
+        this.str = str;
     }
 
-    public void setStr(String str) {
-        this.str = str;
+    public Input() {
+       scun();
     }
 
     public double getA() {
         return a;
     }
 
-    public void setA(double a) {
-        this.a = a;
-    }
-
     public double getB() {
         return b;
     }
 
-    public void setB(double b) {
-        this.b = b;
+    public String getStr() {
+        return str;
     }
-
 
     public void scun() {
         Scanner scan = new Scanner(System.in);
@@ -38,7 +35,7 @@ class Input {
         System.out.println("Введите второе число");
         b = scan.nextDouble();
         System.out.println("Что сделать? (+ - / * ^)");
-        str = scan.nextLine();
+        str = scan.next();
 
     }
 }
