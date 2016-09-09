@@ -1,6 +1,7 @@
 package com.levelup.lesson5.Task1;
 
 import com.levelup.lesson5.Task1.IstartLine;
+import com.sun.xml.internal.bind.v2.TODO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.List;
 public class StartLine extends Participant implements IstartLine {
     static int MAX_PARTICIPANT = 10;
     private int counter;
-    List<IParticipant> participants = new ArrayList<IParticipant>();
+    List<Participant> participants = new ArrayList<Participant>();
 
     public StartLine() {
     }
@@ -21,11 +22,12 @@ public class StartLine extends Participant implements IstartLine {
         return false;//TODO
     }
 
-    public boolean addParticipant() {
+    /*public boolean addParticipant() {
         if (counter<MAX_PARTICIPANT){
-            participants.add(IParticipant)
+            participants.add();
         }
-    }
+    }*/
+//TODO
 }
 
 
