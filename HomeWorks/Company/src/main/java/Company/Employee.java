@@ -5,7 +5,7 @@ public class Employee {
     private String surname;
     private int salary;
     private int IdEmployee;
-    private int IdCount = 0;
+    private static int IdCount = 0;
 
     public Employee() {
         this.name = "";
